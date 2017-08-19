@@ -1,0 +1,57 @@
+{
+  "name": "@nodeableio/ngx-breadcrumbs",
+  "version": "0.0.1",
+  "description": "a breadcrumbs library for angular 4",
+  "main": "dist/index.js",
+  "scripts": {
+    "clean": "rimraf dist/",
+    "test": "npm run build && rm -rf ./tests/src/dist && cp -r ./dist ./tests/src/dist && cd tests && ng test --single-run",
+    "build:aot": "ngc -p tsconfig.json",
+    "build:jit": "tsc -p tsconfig.json",
+    "build": "npm run clean && npm run build:aot"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nodeableio/ngx-breadcrumbs.git"
+  },
+  "keywords": [
+    "angular",
+    "breadcrumb"
+  ],
+  "author": {
+    "name": "Julian Lyndon-Smith",
+    "email": "julian+breadcrumbs@nodeable.io"
+  },
+  "types": "dist/index.d.ts",
+  "private": false,
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nodeableio/ngx-breadcrumbs/issues"
+  },
+  "homepage": "https://github.com/nodeableio/ngx-breadcrumbs#readme",
+  "peerDependencies": {
+    "@angular/common": "^4.0.0",
+    "@angular/compiler": "^4.0.0",
+    "@angular/core": "^4.0.0",
+    "@angular/http": "^4.0.0",
+    "@angular/platform-browser": "^4.0.0",
+    "@angular/router": "^4.0.0",
+    "core-js": "2.4.1",
+    "rxjs": "^5.1.0",
+    "typescript": "^2.2.1",
+    "zone.js": "^0.8.5"
+  },
+  "devDependencies": {
+    "@angular/common": "^4.3.5",
+    "@angular/compiler": "^4.0.0",
+    "@angular/compiler-cli": "^4.0.0",
+    "@angular/core": "^4.3.5",
+    "@angular/platform-server": "^4.0.0",
+    "@angular/router": "^4.3.5",
+    "@types/jasmine": "2.5.38",
+    "@types/node": "6.0.60",
+    "rimraf": "^2.5.4",
+    "rxjs": "^5.4.3",
+    "typescript": "^2.4.2"
+  }
+}

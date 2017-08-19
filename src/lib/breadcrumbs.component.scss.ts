@@ -1,0 +1,18 @@
+export const css = `
+.ui.breadcrumb .divider {
+    color: white;
+    font-size: 110%;
+}
+
+.nio.breadcrumb.path {
+    color: white;
+    font-size: 110%;
+    cursor: pointer;
+}
+
+.nio.breadcrumb.last.path {
+    color: white;
+    font-size: 110%;
+    cursor: none;
+}
+`
