@@ -1,7 +1,7 @@
 {
-  "name": "@nodeableio/ngx-breadcrumbs",
-  "version": "0.0.2",
-  "description": "a breadcrumbs library for angular 4",
+  "name": "@nodeableio/ngx-ui",
+  "version": "0.0.1",
+  "description": "A small collection of angular 4+ components using semantic-ui css",
   "main": "dist/index.js",
   "scripts": {
     "clean": "rimraf dist/",
@@ -12,7 +12,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/nodeableio/ngx-breadcrumbs.git"
+    "url": "git+https://github.com/nodeableio/ngx-ui.git"
   },
   "keywords": [
     "angular",
@@ -20,15 +20,15 @@
   ],
   "author": {
     "name": "Julian Lyndon-Smith",
-    "email": "julian+breadcrumbs@nodeable.io"
+    "email": "julian+ngxui@nodeable.io"
   },
   "types": "dist/index.d.ts",
   "private": false,
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/nodeableio/ngx-breadcrumbs/issues"
+    "url": "https://github.com/nodeableio/ngx-ui/issues"
   },
-  "homepage": "https://github.com/nodeableio/ngx-breadcrumbs#readme",
+  "homepage": "https://github.com/nodeableio/ngx-ui#readme",
   "peerDependencies": {
     "@angular/common": "^4.0.0",
     "@angular/compiler": "^4.0.0",
