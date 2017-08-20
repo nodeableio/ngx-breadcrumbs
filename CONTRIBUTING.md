@@ -1,4 +1,4 @@
-# Contributing to @nodeableio/ngx-ui@nodeableio/ngx-ui
+# Contributing to @nodeableio/ngx-ui
 
 Your contribution will be greatly appreciated, and will help @nodeableio/ngx-ui get even better! As a contributor, here are the guidelines to follow:
 
