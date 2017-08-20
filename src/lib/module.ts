@@ -1,5 +1,6 @@
 import { NgModule, ModuleWithProviders } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { RouterModule } from '@angular/router';
 
 import { NioBreadcrumbsService } from './breadcrumbs.service';
 import { NioBreadcrumbComponent } from './breadcrumbs.component';
@@ -8,7 +9,8 @@ import { NioBreadcrumbComponent } from './breadcrumbs.component';
     declarations: [NioBreadcrumbComponent],
 
     imports: [
-        CommonModule
+        CommonModule,
+        RouterModule
     ],
 
     exports: [NioBreadcrumbComponent]

@@ -8,7 +8,7 @@ import { css } from './breadcrumbs.component.scss';
  * It subscribes to the router in order to update the breadcrumb trail as you navigate to a component.
  */
 @Component({
-    selector: 'nio-breadcrumbs',
+    selector: 'nio-breadcrumbsx',
     template: html,
     styles: [css]
 })
