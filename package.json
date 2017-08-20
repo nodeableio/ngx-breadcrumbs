@@ -1,6 +1,6 @@
 {
   "name": "@nodeableio/ngx-ui",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A small collection of angular 4+ components using semantic-ui css",
   "main": "dist/index.js",
   "scripts": {
