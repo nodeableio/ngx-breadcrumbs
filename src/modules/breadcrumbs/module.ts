@@ -16,7 +16,7 @@ import { NioBreadcrumbComponent } from './breadcrumbs.component';
     exports: [NioBreadcrumbComponent]
 })
 export class NioBreadcrumbsModule {
-    static forRoot(): ModuleWithProviders {
+    public static forRoot():ModuleWithProviders {
         return {
             ngModule: NioBreadcrumbsModule,
             providers: [NioBreadcrumbsService]

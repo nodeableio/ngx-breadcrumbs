@@ -4,17 +4,17 @@ import { CommonModule } from '@angular/common';
 import { NioTimelineComponent } from './';
 
 @NgModule({
-  imports: [
-    CommonModule
-  ],
+    imports: [
+        CommonModule
+    ],
 
-  entryComponents: [  ],
+    entryComponents: [],
 
-  providers: [],
+    providers: [],
 
-  declarations: [NioTimelineComponent],
+    declarations: [NioTimelineComponent],
 
-  exports: [NioTimelineComponent]
+    exports: [NioTimelineComponent]
 })
 
 export class NioTimelineModule { }
