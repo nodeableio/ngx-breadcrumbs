@@ -1,0 +1,31 @@
+<ul class="nio-timeline nio-timeline-split nio-timeline-centered">
+    <li *ngFor="let item of displayItems" class="nio-timeline-item {{item.class}}">
+        <div class="nio-timeline-info">
+            <span>{{item.displayDate}}</span>
+            <div *ngIf="item.time" class="nio-timeline-time">{{item.time}}</div>
+            <div *ngIf="item.subtitle2" class="nio-timeline-subtitle">{{item.subtitle2}}</div>
+        </div>
+
+        <div class="nio-timeline-marker"></div>
+        <div class="nio-timeline-content">
+            <h2 *ngIf="item.class" class="nio-timeline-title">{{item.title}}</h2>
+            <div *ngIf="!item.class">
+
+                <h3 class="nio-timeline-title">
+                    <span class="nio-timeline-title-content">{{item.title}}</span>
+                    <span class="nio-timeline-buttons">
+                        <a *ngIf="editButton" class="ui circular label nio-timeline-button-edit" (click)="onEditClick(item)"><i class="edit icon"></i></a>
+                        <a *ngIf="removeButton" class="ui circular label nio-timeline-button-remove" (click)="onRemoveClick(item)"><i class="remove icon"></i></a>
+                    </span>
+                </h3>
+                <div class="nio-timeline-subtitle">{{item.subtitle}}</div>
+
+                <p>{{item.content}}</p>
+            </div>
+            
+        </div>
+        
+    </li>
+
+    
+</ul>

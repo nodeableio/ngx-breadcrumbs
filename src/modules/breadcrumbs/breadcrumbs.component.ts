@@ -1,16 +1,14 @@
 import {Component, Input, OnInit, OnChanges} from '@angular/core';
 import {Router, NavigationEnd} from '@angular/router';
 import { NioBreadcrumbsService } from './breadcrumbs.service';
-import { html } from './breadcrumbs.component.html';
-import { css } from './breadcrumbs.component.scss';
 /**
  * This component shows a breadcrumb trail for available routes the router can navigate to.
  * It subscribes to the router in order to update the breadcrumb trail as you navigate to a component.
  */
 @Component({
     selector: 'nio-breadcrumbs',
-    template: html,
-    styles: [css]
+    templateUrl: './breadcrumbs.component.html',
+    styleUrls: ['./breadcrumbs.component.scss']
 })
 
 export class NioBreadcrumbComponent implements OnInit, OnChanges {

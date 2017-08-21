@@ -1,48 +1,25 @@
-# See http://help.github.com/ignore-files/ for more about ignoring files.
-
-# compiled output
-/tmp
-dist/
-
-# dependencies
-/node_modules
-/bower_components
-
-# IDEs and editors
-/.idea
-.project
-.classpath
-*.launch
-.settings/
-
-# misc
-/.sass-cache
-/connect.lock
-/coverage/*
-/libpeerconnection.log
+# Node
+node_modules
 npm-debug.log
-testem.log
-/typings
 
-# e2e
-/e2e/*.js
-/e2e/*.map
+# Yarn
+yarn-error.log
 
-#System Files
-.DS_Store
+# JetBrains
+.idea/
+
+# VS Code
+.vscode/
+
+# Windows
 Thumbs.db
+Desktop.ini
 
-# test subproject and demo
-/demo
-/tests/dist
-/tests/tmp
-/tests/node_modules
-/tests/.idea
-/tests/.vscode
-/tests/.sass-cache
-/tests/connect.lock
-/tests/coverage/*
-/tests/libpeerconnection.log
-/tests/typings
-/tests/e2e/*.js
-/tests/e2e/*.map
+# Mac
+.DS_Store
+
+# Temporary files
+coverage/
+dist
+docs
+tmp
