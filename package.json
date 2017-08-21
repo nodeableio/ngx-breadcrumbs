@@ -1,8 +1,7 @@
 {
   "name": "@nodeableio/ngx-ui",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "A small collection of angular 4+ components using semantic-ui css",
-
   "main": "./dist/index.umd.js",
   "module": "./dist/index.js",
   "typings": "./dist/index.d.ts",
@@ -17,7 +16,7 @@
     "semantic-ui",
     "ng2-semantic-ui"
   ],
-"author": {
+  "author": {
     "name": "Julian Lyndon-Smith",
     "email": "julian+ngxui@nodeable.io"
   },
@@ -40,29 +39,27 @@
     "docs": "compodoc -p tsconfig.json -d docs --disableCoverage --disablePrivateOrInternalSupport",
     "explorer": "source-map-explorer ./dist/index.umd.js",
     "gh-pages": "rimraf docs && npm run docs && gh-pages -d docs",
-    "lint": "npm run tslint 'src/**/*.ts'",
+    "lint": "npm run tslint",
     "ngcompile": "node_modules/.bin/ngc -p tsconfig-aot.json",
     "postversion": "git push && git push --tags",
     "prebuild": "rimraf dist tmp",
     "prebuild:watch": "rimraf dist tmp",
     "prepublishOnly": "npm run ci",
     "preversion": "npm run ci",
-    "test": "karma start",
-    "test:watch": "karma start --auto-watch --no-single-run",
-    "tslint": "tslint"
+    "tslint": "tslint -p ."
   },
   "dependencies": {},
   "peerDependencies": {
-"@angular/common": "^4.0.0",
+    "@angular/common": "^4.0.0",
     "@angular/compiler": "^4.0.0",
     "@angular/core": "^4.0.0",
     "@angular/http": "^4.0.0",
     "@angular/platform-browser": "^4.0.0",
     "@angular/router": "^4.0.0",
+    "moment-es6": "^1.0.0",
     "rxjs": "^5.1.0",
     "typescript": "^2.2.1",
-    "zone.js": "^0.8.5",
-    "moment-es6": "^1.0.0"
+    "zone.js": "^0.8.5"
   },
   "devDependencies": {
     "@angular/common": "^4.0.0",
@@ -73,6 +70,7 @@
     "@angular/platform-browser-dynamic": "^4.0.0",
     "@angular/router": "^4.3.5",
     "@compodoc/compodoc": "^1.0.0-beta.9",
+    "@nodeableio/code-style": "^1.0.0",
     "@types/jasmine": "^2.5.47",
     "@types/karma": "^0.13.35",
     "@types/node": "^7.0.18",
