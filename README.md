@@ -3,12 +3,17 @@
 ## [ngx-breadcrumbs](src/modules/breadcrumbs/README.md)
 A component that creates a breadcrumbs trail. It hooks into the angular router, and dynamically builds up a breadcrumbs trail
 
+![screenshot](src/modules/breadcrumbs/screenshot.png)
+
 ## [ngx-timeline](src/modules/timeline/README.md)
 This is an angular 4+ component that creates a vertical timeline of events
 
 It uses css based on css written by [Brady Wright] (http://codepen.io/phasethree/pen/NNOvrW)
 
+![screenshot](src/modules/timeline/screenshot.png)
+
 Also checkout the awesome [ng2-semantic-ui](https://github.com/edcarroll/ng2-semantic-ui) project for loads of other components)
+
 
 ## Dependencies
 

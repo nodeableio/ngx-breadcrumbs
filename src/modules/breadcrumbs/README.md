@@ -3,6 +3,8 @@ This is an angular 4+ component that creates a breadcrumbs trail. It hooks into 
 
 It is mainly based on the [ng2-breadcrumb project] (https://github.com/gmostert/ng2-breadcrumb ) , with changes for semantic ui and a new build system
 
+![screenshot](./screenshot.png)
+
 It interprets the browser URL of a navigate request, in the same way the component router does to match a path to a specific component, to build up a hierarchy of available parent/child routes for that destination.
 
 So given a navigation request to a url '/comp1/comp2/comp3', a breadcrumb trail with 3 levels will be generated. Each level includes all the elements from the previous level along with the next child. Thus the above url request will result in the following 3 levels being generated: '/comp1', '/comp1/comp2', '/comp1/comp2/comp3'.
