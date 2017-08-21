@@ -15,12 +15,12 @@ Optionally uses semantic-ui for styling of some elements
 ## Install
 Install the module via npm:
 
-    npm install @nodeableio/ngx-breadcrumbs --save
+    npm install @nodeableio/ngx-ui --save
 
 ## Usage
 Import the this module into your module using forRoot()
 
-    import { NioBreadcrumbsModule } from '@nodeableio/ngx-breadcrumbs';
+    import { NioBreadcrumbsModule } from '@nodeableio/ngx-ui';
 
 	@NgModule({
         imports: [NioBreadcrumbsModule.forRoot()]
