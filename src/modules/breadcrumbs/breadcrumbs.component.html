@@ -1,5 +1,5 @@
 <div class="ui nio breadcrumb">
-    <span *ngFor="let url of _urls; let last = last" class="section" [ngClass]="{'active': last}">
+    <span *ngFor="let url of urls; let last = last" class="section" [ngClass]="{'active': last}">
         <a class="nio breadcrumb path" *ngIf="!last && url == prefix" (click)="navigateTo('/')">{{url}}</a>
         <a class="nio breadcrumb path" *ngIf="!last && url != prefix" (click)="navigateTo(url)">{{friendlyName(url)}}</a>
 
