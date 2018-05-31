@@ -1,0 +1,321 @@
+$nio-timeline-primary-color: #ff6b6b;
+$nio-timeline-primary-color-hover: scale-color(
+  $nio-timeline-primary-color,
+  $lightness: 32%
+);
+a {
+  color: $nio-timeline-primary-color;
+  &:hover {
+    color: $nio-timeline-primary-color-hover;
+    // text-decoration: none;
+  }
+}
+
+/*==================================
+    TIMELINE
+==================================*/
+
+/*-- GENERAL STYLES
+    ------------------------------*/
+
+.nio-timeline {
+  line-height: 1.4em;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    line-height: inherit;
+  }
+}
+
+.nio-timeline-title-content {
+  white-space: pre-line;
+}
+
+.nio-timeline-subtitle {
+  font-size: 1em;
+  letter-spacing: 1px;
+  color: rgba(0, 0, 0, 0.4);
+  margin-top: -12px;
+  padding-bottom: 8px;
+  text-transform: none;
+}
+
+.nio-timeline-time {
+  font-size: 1em;
+  letter-spacing: 1px;
+  color: rgba(0, 0, 0, 0.4);
+  margin-top: 0px;
+  padding-bottom: 8px;
+  text-transform: none;
+}
+
+/*----- TIMELINE ITEM -----*/
+
+.nio-timeline-item {
+  padding-left: 40px;
+  position: relative;
+  &:last-child {
+    padding-bottom: 0;
+  }
+}
+
+/*----- TIMELINE INFO -----*/
+
+.nio-timeline-info {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  margin: 0 0 0.5em 0;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+/*----- TIMELINE MARKER -----*/
+
+.nio-timeline-marker {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 15px;
+  &:before {
+    background: $nio-timeline-primary-color;
+    border: 3px solid transparent;
+    border-radius: 100%;
+    content: '';
+    display: block;
+    height: 15px;
+    position: absolute;
+    top: 4px;
+    left: 0;
+    width: 15px;
+    transition: background 0.3s ease-in-out, border 0.3s ease-in-out;
+  }
+  &:after {
+    content: '';
+    width: 3px;
+    background: #ccd5db;
+    display: block;
+    position: absolute;
+    top: 24px;
+    bottom: 0;
+    left: 6px;
+  }
+  .nio-timeline-item:last-child &:after {
+    content: none;
+  }
+}
+
+.nio-timeline-item:not(.nio-timeline-period):hover .nio-timeline-marker:before {
+  background: transparent;
+  border: 3px solid $nio-timeline-primary-color;
+}
+
+.nio-timeline-buttons {
+  display: none;
+}
+
+.nio-timeline-button-edit {
+  color: white;
+  background-color: #2185d0;
+  max-width: 2em;
+  max-height: 2em;
+}
+
+.nio-timeline-button-remove {
+  color: white;
+  background-color: #db2828;
+  max-width: 2em;
+  max-height: 2em;
+}
+
+.nio-timeline-item:not(.nio-timeline-period):hover .nio-timeline-buttons {
+  display: block;
+}
+
+/*----- TIMELINE CONTENT -----*/
+
+.nio-timeline-content {
+  padding-bottom: 40px;
+  p {
+    white-space: pre-line;
+    /* collapse WS, preserve LB */
+  }
+  p:last-child {
+    margin-bottom: 0;
+  }
+}
+
+/*----- TIMELINE PERIOD -----*/
+
+.nio-timeline-period {
+  padding: 0;
+  .nio-timeline-info {
+    display: none;
+  }
+  .nio-timeline-marker {
+    &:before {
+      background: transparent;
+      content: '';
+      width: 15px;
+      height: auto;
+      border: none;
+      border-radius: 0;
+      top: 0;
+      bottom: 30px;
+      position: absolute;
+      border-top: 3px solid #ccd5db;
+      border-bottom: 3px solid #ccd5db;
+    }
+    &:after {
+      content: '';
+      height: 32px;
+      top: auto;
+    }
+  }
+  .nio-timeline-content {
+    padding: 40px 0 70px;
+  }
+  .nio-timeline-title {
+    margin: 0;
+  }
+}
+
+/*----------------------------------------------
+        MOD: TIMELINE SPLIT
+    ----------------------------------------------*/
+
+.nio-timeline-split {
+  @media (min-width: 768px) {
+    .nio-timeline {
+      display: table;
+    }
+    .nio-timeline-item {
+      display: table-row;
+      padding: 0;
+    }
+    .nio-timeline-info,
+    .nio-timeline-marker,
+    .nio-timeline-content,
+    .nio-timeline-period .nio-timeline-info {
+      display: table-cell;
+      vertical-align: top;
+    }
+    .nio-timeline-marker {
+      position: relative;
+    }
+    .nio-timeline-content {
+      padding-left: 30px;
+    }
+    .nio-timeline-info {
+      padding-right: 30px;
+    }
+    .nio-timeline-period .nio-timeline-title {
+      position: relative;
+      left: -45px;
+    }
+  }
+}
+
+/*----------------------------------------------
+        MOD: TIMELINE CENTERED
+    ----------------------------------------------*/
+
+.nio-timeline-centered {
+  @extend .nio-timeline-split;
+  @media (min-width: 992px) {
+    &,
+    .nio-timeline-item,
+    .nio-timeline-info,
+    .nio-timeline-marker,
+    .nio-timeline-content {
+      display: block;
+      margin: 0;
+      padding: 0;
+    }
+    .nio-timeline-item {
+      padding-bottom: 40px;
+      overflow: hidden;
+    }
+    .nio-timeline-marker {
+      position: absolute;
+      left: 50%;
+      margin-left: -7.5px;
+    }
+    .nio-timeline-info,
+    .nio-timeline-content {
+      width: 50%;
+    }
+    > .nio-timeline-item:nth-child(odd) .nio-timeline-info {
+      float: left;
+      text-align: right;
+      padding-right: 30px;
+    }
+    > .nio-timeline-item:nth-child(odd) .nio-timeline-content {
+      float: right;
+      text-align: left;
+      padding-left: 30px;
+    }
+    > .nio-timeline-item:nth-child(odd) .nio-timeline-buttons {
+      float: right;
+      text-align: left;
+      padding-left: 30px;
+      margin-left: 5px;
+    }
+    > .nio-timeline-item:nth-child(even) .nio-timeline-info {
+      float: right;
+      text-align: left;
+      padding-left: 30px;
+    }
+    > .nio-timeline-item:nth-child(even) .nio-timeline-content {
+      float: left;
+      text-align: right;
+      padding-right: 30px;
+    }
+    > .nio-timeline-item:nth-child(even) .nio-timeline-buttons {
+      float: left;
+      text-align: right;
+      padding-right: 30px;
+    }
+    > .nio-timeline-item.nio-timeline-period .nio-timeline-content {
+      float: none;
+      padding: 0;
+      width: 100%;
+      text-align: center;
+    }
+    .nio-timeline-item.nio-timeline-period {
+      padding: 50px 0 90px;
+    }
+    .nio-timeline-period .nio-timeline-marker:after {
+      height: 30px;
+      bottom: 0;
+      top: auto;
+    }
+    .nio-timeline-period .nio-timeline-title {
+      left: auto;
+    }
+  }
+}
+
+/*----------------------------------------------
+        MOD: MARKER OUTLINE
+    ----------------------------------------------*/
+
+.nio-timeline-marker-outline {
+  .nio-timeline-marker {
+    &:before {
+      background: transparent;
+      border-color: $nio-timeline-primary-color;
+    }
+  }
+  // .nio-timeline-item:hover .nio-timeline-marker:before {
+  //     background: $nio-timeline-primary-color;
+  // }
+}

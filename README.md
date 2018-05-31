@@ -1,33 +1,27 @@
-# @nodeableio/ngx-ui is a small collection of angular4+ components for semantic-ui css
+# NgxUiApp
 
-## [ngx-breadcrumbs](src/modules/breadcrumbs/README.md)
-A component that creates a breadcrumbs trail. It hooks into the angular router, and dynamically builds up a breadcrumbs trail
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.0.5.
 
-![screenshot](src/modules/breadcrumbs/screenshot.png)
+## Development server
 
-## [ngx-timeline](src/modules/timeline/README.md)
-This is an angular 4+ component that creates a vertical timeline of events
+Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-It uses css based on css written by [Brady Wright] (http://codepen.io/phasethree/pen/NNOvrW)
+## Code scaffolding
 
-![screenshot](src/modules/timeline/screenshot.png)
+Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-Also checkout the awesome [ng2-semantic-ui](https://github.com/edcarroll/ng2-semantic-ui) project for loads of other components)
+## Build
 
+Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
 
-## Dependencies
+## Running unit tests
 
-* [Angular](https://angular.io) (^4.3.1)
-* [Semantic UI CSS](http://semantic-ui.com/) (^2.2.13) (jQuery is **not** required)
+Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-## Want to help?
+## Running end-to-end tests
 
-Want to file a bug, contribute some code, or improve documentation? Great! Please read the [contributing guidelines](./CONTRIBUTING.md) to get going.
+Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
 
-## Development
+## Further help
 
-To generate all library files:
-
-```bash
-$ npm run build
-```
+To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
