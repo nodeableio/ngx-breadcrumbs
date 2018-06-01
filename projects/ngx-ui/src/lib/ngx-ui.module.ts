@@ -1,11 +1,11 @@
 import { NgModule } from '@angular/core';
 import { NgxUiComponent } from './ngx-ui.component';
-import { BreadcrumbsModule } from './breadcrumbs';
-import { TimelineModule } from './timeline';
+import { NioBreadcrumbsModule } from './breadcrumbs';
+import { NioTimelineModule } from './timeline';
 
 @NgModule({
-  imports: [BreadcrumbsModule, TimelineModule],
+  imports: [NioBreadcrumbsModule, NioTimelineModule],
   declarations: [NgxUiComponent],
-  exports: [NgxUiComponent, BreadcrumbsModule, TimelineModule]
+  exports: [NgxUiComponent, NioBreadcrumbsModule, NioTimelineModule]
 })
 export class NgxUiModule {}

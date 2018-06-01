@@ -1,15 +1,18 @@
 import { TestBed, inject } from '@angular/core/testing';
 
-import { BreadcrumbsService } from './breadcrumbs.service';
+import { NioBreadcrumbsService } from './breadcrumbs.service';
 
-describe('BreadcrumbsService', () => {
+describe('NioBreadcrumbsService', () => {
   beforeEach(() => {
     TestBed.configureTestingModule({
-      providers: [BreadcrumbsService]
+      providers: [NioBreadcrumbsService]
     });
   });
 
-  it('should be created', inject([BreadcrumbsService], (service: BreadcrumbsService) => {
-    expect(service).toBeTruthy();
-  }));
+  it(
+    'should be created',
+    inject([NioBreadcrumbsService], (service: NioBreadcrumbsService) => {
+      expect(service).toBeTruthy();
+    })
+  );
 });

@@ -1,10 +1,10 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { TimelineComponent } from './components/timeline.component';
+import { NioTimelineComponent } from './components/timeline.component';
 
 @NgModule({
   imports: [CommonModule],
-  declarations: [TimelineComponent],
-  exports: [TimelineComponent]
+  declarations: [NioTimelineComponent],
+  exports: [NioTimelineComponent]
 })
-export class TimelineModule {}
+export class NioTimelineModule {}

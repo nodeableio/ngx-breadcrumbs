@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 
 @Injectable()
-export class BreadcrumbsService {
+export class NioBreadcrumbsService {
   private _routesFriendlyNames: Map<string, string> = new Map<string, string>();
   private _routesFriendlyNamesRegex: Map<string, string> = new Map<
     string,

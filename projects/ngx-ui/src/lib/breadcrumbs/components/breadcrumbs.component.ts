@@ -1,6 +1,6 @@
 import { Component, Input, OnInit, OnChanges, OnDestroy } from '@angular/core';
 import { Router, NavigationEnd } from '@angular/router';
-import { BreadcrumbsService } from '../services/breadcrumbs.service';
+import { NioBreadcrumbsService } from '../services/breadcrumbs.service';
 /**
  * This component shows a breadcrumb trail for available routes the router can navigate to.
  * It subscribes to the router in order to update the breadcrumb trail as you navigate to a component.
@@ -10,7 +10,7 @@ import { BreadcrumbsService } from '../services/breadcrumbs.service';
   templateUrl: './breadcrumbs.component.html',
   styleUrls: ['./breadcrumbs.component.scss']
 })
-export class BreadcrumbsComponent implements OnInit, OnChanges, OnDestroy {
+export class NioBreadcrumbsComponent implements OnInit, OnChanges, OnDestroy {
   @Input() public prefix = '';
 
   public urls: string[] = [];
@@ -18,7 +18,7 @@ export class BreadcrumbsComponent implements OnInit, OnChanges, OnDestroy {
 
   constructor(
     private _router: Router,
-    private _breadcrumbService: BreadcrumbsService
+    private _breadcrumbService: NioBreadcrumbsService
   ) {
     this.routerSubscription = this._router.events.subscribe(
       (navigationEnd: NavigationEnd) => {

@@ -35,7 +35,7 @@ export interface INioTimelineButtonClick {
   templateUrl: './timeline.component.html',
   styleUrls: ['./timeline.component.scss']
 })
-export class TimelineComponent implements OnChanges {
+export class NioTimelineComponent implements OnChanges {
   @Input() public items: any = [];
   @Input() public descending = true;
   @Input() public dateformat = 'MMMM Do YYYY';

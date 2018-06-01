@@ -1,10 +1,10 @@
-import { TimelineModule } from './timeline.module';
+import { NioTimelineModule } from './timeline.module';
 
-describe('TimelineModule', () => {
-  let timelineModule: TimelineModule;
+describe('NioTimelineModule', () => {
+  let timelineModule: NioTimelineModule;
 
   beforeEach(() => {
-    timelineModule = new TimelineModule();
+    timelineModule = new NioTimelineModule();
   });
 
   it('should create an instance', () => {

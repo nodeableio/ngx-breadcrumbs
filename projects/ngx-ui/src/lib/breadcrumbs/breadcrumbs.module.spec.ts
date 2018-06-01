@@ -1,10 +1,10 @@
-import { BreadcrumbsModule } from './breadcrumbs.module';
+import { NioBreadcrumbsModule } from './breadcrumbs.module';
 
-describe('BreadcrumbsModule', () => {
-  let breadcrumbsModule: BreadcrumbsModule;
+describe('NioBreadcrumbsModule', () => {
+  let breadcrumbsModule: NioBreadcrumbsModule;
 
   beforeEach(() => {
-    breadcrumbsModule = new BreadcrumbsModule();
+    breadcrumbsModule = new NioBreadcrumbsModule();
   });
 
   it('should create an instance', () => {
