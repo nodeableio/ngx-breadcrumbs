@@ -23,6 +23,9 @@
     "@angular/platform-browser": "^6.0.3",
     "@angular/platform-browser-dynamic": "^6.0.3",
     "@angular/router": "^6.0.3",
+    "@syncfusion/ej2-base": "^16.1.38",
+    "@syncfusion/ej2-ng-inputs": "^16.1.45",
+    "@syncfusion/ej2-popups": "^16.1.42",
     "core-js": "^2.5.4",
     "moment": "^2.22.1",
     "primeng": "^6.0.0-alpha.2",
@@ -52,6 +55,7 @@
     "tsickle": ">=0.25.5",
     "tslib": "^1.7.1",
     "tslint": "~5.9.1",
+    "tslint-config-airbnb": "^5.9.2",
     "typescript": "~2.7.2"
   }
 }
