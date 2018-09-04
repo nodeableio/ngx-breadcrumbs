@@ -18,7 +18,8 @@ import { NioBreadcrumbsService } from '../services/breadcrumbs.service';
     styleUrls: ['./breadcrumbs.component.scss']
 })
 export class NioBreadcrumbsComponent implements OnInit, OnChanges, OnDestroy {
-    @Input() public prefix = '';
+    @Input()
+    public prefix = '';
 
     public urls: string[] = [];
     public routerSubscription: any;
@@ -41,12 +42,7 @@ export class NioBreadcrumbsComponent implements OnInit, OnChanges, OnDestroy {
         );
     }
 
-    public ngOnInit(): void {
-        this.generateBreadcrumbTrail(this._router.url);
-        if (this.prefix.length > 0) {
-            this.urls.unshift(this.prefix);
-        }
-    }
+    public ngOnInit(): void {}
 
     public ngOnChanges(changes: SimpleChanges): void {
         if (!this.urls) {
